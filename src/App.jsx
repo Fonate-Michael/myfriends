@@ -10,6 +10,7 @@ import PostDetail from './pages/PostDetail';
 import Notifications from './pages/Notifications';
 import Settings from './pages/Settings';
 import Bookmarks from './pages/Bookmarks';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="notifications" element={<Notifications />} />
             <Route path="bookmarks" element={<Bookmarks />} />
             <Route path="settings" element={<Settings />} />
+            <Route path="dashboard" element={<Dashboard />} />
             <Route path="post/:postId" element={<PostDetail />} />
             <Route path="profile/@me" element={<Profile isOwnProfile={true} />} />
             <Route path="profile/:username" element={<Profile isOwnProfile={false} />} />
